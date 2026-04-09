@@ -72,7 +72,7 @@ export default function DashboardPage() {
                 className={`flex items-center gap-3 w-full p-3 rounded-xl transition-all ${
                   item.active 
                     ? "bg-indigo-50 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-400 font-semibold" 
-                    : "text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    : "text-gray-900 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
                 }`}
               >
                 <item.icon size={20} />
@@ -98,7 +98,7 @@ export default function DashboardPage() {
         <header className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
           <div>
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Dashboard</h1>
-            <p className="text-gray-500 dark:text-gray-400">Welcome back, {user?.username}!</p>
+            <p className="text-gray-900 dark:text-gray-400">Welcome back, {user?.username}!</p>
           </div>
           
           <div className="flex items-center gap-4">
@@ -130,7 +130,7 @@ export default function DashboardPage() {
               </div>
               <span className="text-green-500 text-sm font-bold">+100% Secure</span>
             </div>
-            <h3 className="text-gray-500 dark:text-gray-400 text-sm font-medium">Session Status</h3>
+            <h3 className="text-gray-900 dark:text-gray-400 text-sm font-medium">Session Status</h3>
             <p className="text-2xl font-bold text-gray-900 dark:text-white mt-1">Authenticated</p>
           </motion.div>
 
@@ -144,9 +144,9 @@ export default function DashboardPage() {
               <div className="p-3 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-400 rounded-2xl">
                 <Clock />
               </div>
-              <span className="text-gray-400 text-sm">Real-time</span>
+              <span className="text-gray-600 text-sm">Real-time</span>
             </div>
-            <h3 className="text-gray-500 dark:text-gray-400 text-sm font-medium">Last Login</h3>
+            <h3 className="text-gray-900 dark:text-gray-400 text-sm font-medium">Last Login</h3>
             <p className="text-2xl font-bold text-gray-900 dark:text-white mt-1">{new Date().toLocaleDateString()}</p>
           </motion.div>
 
@@ -162,19 +162,19 @@ export default function DashboardPage() {
               </div>
               <span className="text-indigo-500 dark:text-indigo-400 text-sm font-bold underline cursor-pointer">View Settings</span>
             </div>
-            <h3 className="text-gray-500 dark:text-gray-400 text-sm font-medium">Current Role</h3>
+            <h3 className="text-gray-900 dark:text-gray-400 text-sm font-medium">Current Role</h3>
             <p className="text-2xl font-bold text-gray-900 dark:text-white mt-1">Administrator</p>
           </motion.div>
         </section>
 
         {/* Placeholder for table/activity */}
         <div className="mt-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border border-gray-100 dark:border-gray-700 p-8">
-          <h2 className="text-xl font-bold mb-6 dark:text-white text-center flex flex-col items-center">
+          <h2 className="text-xl font-bold mb-6 text-gray-900 dark:text-white text-center flex flex-col items-center">
             <LayoutDashboard className="mb-2 text-indigo-500" size={32} />
              Congratulations! You've successfully implemented the secure dashboard.
           </h2>
           <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-2xl text-center">
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-900 dark:text-gray-300">
               This dashboard is only accessible via a valid JWT token stored in an HttpOnly cookie.
               You can proceed to test the logout functionality.
             </p>

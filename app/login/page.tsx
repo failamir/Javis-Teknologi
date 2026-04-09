@@ -75,14 +75,14 @@ export default function LoginPage() {
               <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 mb-2">
                 Welcome Back
               </h1>
-              <p className="text-gray-500 dark:text-gray-400">
+              <p className="text-gray-900 dark:text-gray-400">
                 Sign in to your account to continue
               </p>
             </div>
 
             <form onSubmit={handleLogin} className="space-y-6">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 ml-1">
+                <label className="text-sm font-bold text-gray-900 dark:text-gray-300 ml-1">
                   Email or Username
                 </label>
                 <div className="relative group">
@@ -101,7 +101,7 @@ export default function LoginPage() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 ml-1">
+                <label className="text-sm font-bold text-gray-900 dark:text-gray-300 ml-1">
                   Password
                 </label>
                 <div className="relative group">
@@ -153,7 +153,7 @@ export default function LoginPage() {
               </button>
 
               <div className="text-center pt-2">
-                <p className="text-xs text-gray-400 dark:text-gray-500">
+                <p className="text-xs text-gray-700 dark:text-gray-500">
                   Demo Credentials: <span className="font-semibold text-indigo-500">admin</span> / <span className="font-semibold text-indigo-500">password123</span>
                 </p>
               </div>
@@ -161,7 +161,7 @@ export default function LoginPage() {
           </div>
           
           <div className="bg-gray-50 dark:bg-gray-900 dark:bg-opacity-50 p-4 text-center border-t border-gray-100 dark:border-gray-700">
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-700">
               © 2026 PT Javis Teknologi Albarokah. All rights reserved.
             </p>
           </div>
